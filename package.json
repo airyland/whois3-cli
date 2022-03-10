@@ -1,0 +1,22 @@
+{
+  "name": "whois3",
+  "version": "0.0.0",
+  "description": "whois3 cli",
+  "main": "index.js",
+  "scripts": {},
+  "bin": {
+    "whois3": "index.js"
+  },
+  "author": "Airyland <i@mao.li>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/airyland/whois3-cli.git"
+  },
+  "dependencies": {
+    "axios": "^0.26.1",
+    "commander": "^9.0.0",
+    "dayjs": "^1.10.8",
+    "update-notifier": "^5.1.0"
+  }
+}
