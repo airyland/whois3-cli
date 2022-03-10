@@ -29,7 +29,6 @@ program.arguments('<keyword>').action(async (keyword) => {
 		})
 		console.log()
 		console.log('-------------------------------------------')
-		console.log('registered:    ', data.data.registered)
 		console.log('available:     ', data.data.available, data.data.reason ? `(${data.data.reason})` : '')
 		if (data.data.available) {
 			console.log('register url:  ', getRegisterUrl(data.data.name))
@@ -48,7 +47,7 @@ program.arguments('<keyword>').action(async (keyword) => {
 			console.log('register url:  ', getRegisterUrl(data.data.name))
 		}
 		console.log('-------------------------------------------')
-		console.log(data.data)
+    console.dir(data.data)
 	} catch (e) {
 		console.log(e.message)
 	}
