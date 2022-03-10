@@ -4,7 +4,7 @@ const pkg = require('./package.json')
 const dayjs = require('dayjs')
 
 const updateNotifier = require('update-notifier')
-const notifier = udateNotifier({
+const notifier = updateNotifier({
   pkg,
   updateCheckInterval: 12 * 60 * 60 * 1000
 })
