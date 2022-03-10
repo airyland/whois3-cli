@@ -20,6 +20,9 @@ program.arguments('<keyword>').action(async (keyword) => {
 		console.error('Please type something.')
 		return
 	}
+  if (!keyword.includes('.bit') && !keyword.includes('.eth')) {
+    keyword = keyword + '.eth'
+  }
 	try {
 		const { data } = await axios.get(API, {
 			params: {
