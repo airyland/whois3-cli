@@ -1,6 +1,6 @@
 {
   "name": "whois3",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "whois3 cli",
   "main": "index.js",
   "scripts": {},
